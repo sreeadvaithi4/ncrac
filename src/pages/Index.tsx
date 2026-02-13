@@ -6,29 +6,29 @@ import { Link } from "react-router-dom";
 import { Download, BookOpen, Building2, GraduationCap } from "lucide-react";
 
 const topics = [
-  "Energy efficiency & cold/heat recovery",
-  "Novel/alternate ecofriendly RAC systems",
-  "Natural/new refrigerants & mixtures",
-  "Refrigerated cold chain, transport & cold stores",
-  "Sorption heating and cooling systems",
-  "District heating and cooling",
-  "Desiccant and evaporative cooling",
-  "Polygeneration",
-  "Heat pump",
-  "Indoor air quality and Industrial ventilation",
-  "HVAC systems for Healthcare Applications",
-  "Clean Room for semiconductor / Solar PV / Automobile / Pharma sectors",
-  "Green buildings",
-  "Building management systems",
-  "Modern innovations in HVAC systems",
-  "Low temperature applications",
-  "Application of IoT in RAC",
-  "AI/ML models for refrigeration systems",
-  "Role of CFD in HVAC design",
-  "Refrigeration cycles",
-  "Thermal comfort and comfort standards",
-  "Thermal energy storage",
-];
+"Energy efficiency & cold/heat recovery",
+"Novel/alternate ecofriendly RAC systems",
+"Natural/new refrigerants & mixtures",
+"Refrigerated cold chain, transport & cold stores",
+"Sorption heating and cooling systems",
+"District heating and cooling",
+"Desiccant and evaporative cooling",
+"Polygeneration",
+"Heat pump",
+"Indoor air quality and Industrial ventilation",
+"HVAC systems for Healthcare Applications",
+"Clean Room for semiconductor / Solar PV / Automobile / Pharma sectors",
+"Green buildings",
+"Building management systems",
+"Modern innovations in HVAC systems",
+"Low temperature applications",
+"Application of IoT in RAC",
+"AI/ML models for refrigeration systems",
+"Role of CFD in HVAC design",
+"Refrigeration cycles",
+"Thermal comfort and comfort standards",
+"Thermal energy storage"];
+
 
 const Index = () => {
   return (
@@ -44,7 +44,7 @@ const Index = () => {
               <div className="flex items-start gap-4">
                 <BookOpen className="text-accent shrink-0 mt-1" size={28} />
                 <p className="text-foreground leading-relaxed">
-                  The National Conference on Refrigeration and Air Conditioning (NCRAC) was initiated at IIT Madras in 2009 and subsequently held as a biennial event in 2011 and 2013. The 4th NCRAC was hosted by Rajalakshmi College of Engineering, Chennai in 2015, followed by the 5th NCRAC at NITK Surathkal in 2018. The 6th NCRAC returned to IIT Madras, while the 7th NCRAC in 2022, organized by IIT Guwahati in association with IIT Tirupati, marked the first international edition of the conference. The most recent edition, NCRAC 2024, was hosted by IIT.
+                  ​The National Conference on Refrigeration and Air Conditioning (NCRAC) was initiated at IIT Madras in 2009 and subsequently held as a biennial event in 2011 and 2013. The 4 NCRAC was hosted by Rajalakshmi College of Engineering, Chennai in 2015, followed by the 5th NCRAC at NITK Surathkal in 2018. The 6th NCRAC returned to IIT Madras, while the 7th NCRAC in 2022, organized by IIT Guwahati in association with IIT Tirupati, marked the first international edition of the conference. The most recent edition, NCRAC 2024, was hosted by IIT Madras. Building on this legacy, NCRAC 2026 aims to provide an international platform for the discussion and dissemination of cutting-edge research in refrigeration and air conditioning to the global community.
                 </p>
               </div>
             </div>
@@ -105,15 +105,15 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <SectionTitle title="Conference Topics" />
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3">
-            {topics.map((topic, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-2 bg-card rounded-lg p-3 border border-border text-sm"
-              >
+            {topics.map((topic, i) =>
+            <div
+              key={i}
+              className="flex items-start gap-2 bg-card rounded-lg p-3 border border-border text-sm">
+
                 <span className="text-accent font-bold mt-0.5">›</span>
                 <span className="text-foreground">{topic}</span>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -130,21 +130,21 @@ const Index = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/registration"
-              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300"
-            >
+              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300">
+
               Register Now
             </Link>
             <Link
               to="/important-dates"
-              className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-            >
+              className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+
               View Important Dates
             </Link>
           </div>
         </div>
       </section>
-    </PageLayout>
-  );
+    </PageLayout>);
+
 };
 
 export default Index;
