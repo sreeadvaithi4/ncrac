@@ -1,13 +1,164 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import PageLayout from "@/components/PageLayout";
+import HeroSection from "@/components/HeroSection";
+import CountdownTimer from "@/components/CountdownTimer";
+import SectionTitle from "@/components/SectionTitle";
+import { Link } from "react-router-dom";
+import { Download, BookOpen, Building2, GraduationCap } from "lucide-react";
+
+const topics = [
+  "Energy efficiency & cold/heat recovery",
+  "Novel/alternate ecofriendly RAC systems",
+  "Natural/new refrigerants & mixtures",
+  "Refrigerated cold chain, transport & cold stores",
+  "Sorption heating and cooling systems",
+  "District heating and cooling",
+  "Desiccant and evaporative cooling",
+  "Polygeneration",
+  "Heat pump",
+  "Indoor air quality and Industrial ventilation",
+  "HVAC systems for Healthcare Applications",
+  "Clean Room for semiconductor / Solar PV / Automobile / Pharma sectors",
+  "Green buildings",
+  "Building management systems",
+  "Modern innovations in HVAC systems",
+  "Low temperature applications",
+  "Application of IoT in RAC",
+  "AI/ML models for refrigeration systems",
+  "Role of CFD in HVAC design",
+  "Refrigeration cycles",
+  "Thermal comfort and comfort standards",
+  "Thermal energy storage",
+];
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <PageLayout>
+      <HeroSection />
+      <CountdownTimer />
+
+      {/* About NCRAC */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <SectionTitle title="About NCRAC" />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
+              <div className="flex items-start gap-4">
+                <BookOpen className="text-accent shrink-0 mt-1" size={28} />
+                <p className="text-foreground leading-relaxed">
+                  The National Conference on Refrigeration and Air Conditioning (NCRAC) was initiated at IIT Madras in 2009 and subsequently held as a biennial event in 2011 and 2013. The 4th NCRAC was hosted by Rajalakshmi College of Engineering, Chennai in 2015, followed by the 5th NCRAC at NITK Surathkal in 2018. The 6th NCRAC returned to IIT Madras, while the 7th NCRAC in 2022, organized by IIT Guwahati in association with IIT Tirupati, marked the first international edition of the conference. The most recent edition, NCRAC 2024, was hosted by IIT.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Objectives */}
+      <section className="section-beige py-16">
+        <div className="container mx-auto px-4">
+          <SectionTitle title="Conference Objectives" />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-background rounded-xl p-8 border border-border shadow-sm">
+              <p className="text-foreground leading-relaxed">
+                The aspirations and living standards of humankind continue to rise alongside rapid technological progress, while challenges such as environmental degradation, global warming, and climate change demand urgent attention. Meeting human comfort and industrial needs in an environmentally sustainable manner places Refrigeration and Air Conditioning (RAC) at the forefront of technological innovation. Beyond human comfort, RAC systems are essential to sectors including food preservation, healthcare, space exploration, and digital infrastructure, and currently account for nearly 20% of global electricity consumption. This conference aims to bring together researchers, academicians, industry professionals, and policymakers to discuss these challenges, showcase emerging technologies, and chart a path toward a low-carbon, energy-efficient, and sustainable future for refrigeration and air conditioning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About IIT Tirupati */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <SectionTitle title="About IIT Tirupati" />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
+              <div className="flex items-start gap-4">
+                <Building2 className="text-accent shrink-0 mt-1" size={28} />
+                <p className="text-foreground leading-relaxed">
+                  IIT Tirupati, established in 2015, began functioning in the academic year 2015–16 with the support of its mentoring institute, IIT Madras. By 2018, its academic programs had expanded to nine departments spanning engineering, sciences, and humanities, offering B.Tech, M.Tech, M.Sc, M.S.(R), and PhD programmes. Its curricula emphasize a strong foundation in theory complemented by practice-oriented laboratories, fostering innovation, creativity, teamwork, communication skills, ethics, and societal engagement. The permanent campus, spread over 548 acres, is under development, with several buildings operational since 2018. IIT Tirupati is also developing an 18-acre research park on its campus, set to be one of the largest in India upon completion. This facility aims to foster innovation, entrepreneurship, and industry-academia collaborations in areas like smart infrastructure, energy, and AI. Located in Tirupati, the institute benefits from an airport and excellent connectivity to Chennai and Bengaluru.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Mechanical Engineering */}
+      <section className="section-beige py-16">
+        <div className="container mx-auto px-4">
+          <SectionTitle title="Department of Mechanical Engineering" />
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-background rounded-xl p-8 border border-border shadow-sm">
+              <div className="flex items-start gap-4">
+                <GraduationCap className="text-accent shrink-0 mt-1" size={28} />
+                <p className="text-foreground leading-relaxed">
+                  The Department of Mechanical Engineering at IIT Tirupati offers comprehensive programs in both undergraduate and postgraduate studies, with research strengths in thermal engineering, manufacturing, design, and energy systems. The department houses state-of-the-art laboratories and is committed to advancing innovation in sustainable technologies, contributing to India's vision of becoming a developed nation by 2047.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Topics */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <SectionTitle title="Conference Topics" />
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3">
+            {topics.map((topic, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-2 bg-card rounded-lg p-3 border border-border text-sm"
+              >
+                <span className="text-accent font-bold mt-0.5">›</span>
+                <span className="text-foreground">{topic}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Brochure Download */}
+      <section className="section-beige py-12">
+        <div className="container mx-auto px-4 text-center">
+          <SectionTitle title="Download Brochure" />
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:shadow-lg"
+          >
+            <Download size={18} />
+            Download Brochure (PDF)
+          </a>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+            Ready to Participate?
+          </h2>
+          <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+            Submit your abstract and register for NCRAC 2026 to be part of India's premier conference on Refrigeration and Air Conditioning.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/registration"
+              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+            >
+              Register Now
+            </Link>
+            <Link
+              to="/important-dates"
+              className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            >
+              View Important Dates
+            </Link>
+          </div>
+        </div>
+      </section>
+    </PageLayout>
   );
 };
 
