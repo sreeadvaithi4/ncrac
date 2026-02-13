@@ -1,8 +1,46 @@
+import { useState, useEffect } from "react";
+import { Download } from "lucide-react";
 import heroBg from "@/assets/images/hero-bg.jpg";
 
+const targetDate = new Date("2026-12-13T00:00:00").getTime();
+
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
+function calculateTimeLeft(): TimeLeft {
+  const now = Date.now();
+  const diff = Math.max(0, targetDate - now);
+  return {
+    days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((diff / (1000 * 60)) % 60),
+    seconds: Math.floor((diff / 1000) % 60),
+  };
+}
+
 const HeroSection = () => {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const blocks = [
+    { value: timeLeft.days, label: "Days" },
+    { value: timeLeft.hours, label: "Hours" },
+    { value: timeLeft.minutes, label: "Minutes" },
+    { value: timeLeft.seconds, label: "Seconds" },
+  ];
+
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
         src={heroBg}
         alt=""
@@ -21,10 +59,43 @@ const HeroSection = () => {
         <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
           NCRAC 2026
         </p>
-        <div className="inline-block section-beige rounded-lg px-6 py-3 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+        <div className="inline-block section-beige rounded-lg px-6 py-3 mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
           <p className="text-primary font-semibold text-sm md:text-base">
             Theme: <span className="text-green-accent">Smart & Sustainable HVAC Systems for Viksit Bharat 2047</span>
           </p>
+        </div>
+
+        {/* Download Brochure Button */}
+        <div className="mb-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-green-accent hover:text-primary transition-all duration-300 hover:shadow-lg"
+          >
+            <Download size={18} />
+            Download Brochure (PDF)
+          </a>
+        </div>
+
+        {/* Countdown Timer */}
+        <div className="animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
+          <h2 className="text-primary-foreground font-bold text-xl mb-6">
+            Conference Starts In
+          </h2>
+          <div className="flex justify-center gap-4 md:gap-6 flex-wrap">
+            {blocks.map((block) => (
+              <div
+                key={block.label}
+                className="bg-background/90 backdrop-blur-sm rounded-xl shadow-md px-5 py-4 md:px-8 md:py-6 text-center min-w-[80px] border border-border"
+              >
+                <div className="text-3xl md:text-5xl font-bold text-green-accent animate-count-pulse tabular-nums">
+                  {String(block.value).padStart(2, "0")}
+                </div>
+                <div className="text-xs md:text-sm font-semibold text-primary mt-2 uppercase tracking-wider">
+                  {block.label}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

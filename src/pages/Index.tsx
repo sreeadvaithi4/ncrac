@@ -1,6 +1,6 @@
 import PageLayout from "@/components/PageLayout";
 import HeroSection from "@/components/HeroSection";
-import CountdownTimer from "@/components/CountdownTimer";
+
 import SectionTitle from "@/components/SectionTitle";
 import { Link } from "react-router-dom";
 import { Download, BookOpen, Building2, GraduationCap } from "lucide-react";
@@ -34,7 +34,6 @@ const Index = () => {
   return (
     <PageLayout>
       <HeroSection />
-      <CountdownTimer />
 
       {/* About NCRAC */}
       <section className="py-16">
@@ -116,20 +115,6 @@ const Index = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Brochure Download */}
-      <section className="section-beige py-12">
-        <div className="container mx-auto px-4 text-center">
-          <SectionTitle title="Download Brochure" />
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:shadow-lg"
-          >
-            <Download size={18} />
-            Download Brochure (PDF)
-          </a>
         </div>
       </section>
 
