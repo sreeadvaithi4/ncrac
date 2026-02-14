@@ -185,12 +185,6 @@ export const committeeData: CommitteeSection[] = [
         name: "Mr. I. Hariprasad",
         designation: "President Elect",
         institution: "ASHRAE Chennai Chapter",
-        photo: mrHariprasad,
-      },
-      {
-        name: "Mr. Krishnasamy R.",
-        designation: "President Elect",
-        institution: "ISHRAE Chennai Chapter",
         photo: placeholderAvatar,
       },
       {
