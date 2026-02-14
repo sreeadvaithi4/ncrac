@@ -29,6 +29,7 @@ import drSahoo from "@/assets/committee/dr_s_sahoo.jpg";
 import drSharma from "@/assets/committee/dr_vinod_kumar_sharma.jpg";
 import drPraveen from "@/assets/committee/dr_g_praveen_kumar.jpg";
 import drHarikrishnan from "@/assets/committee/dr_harikrishnan_s.jpg";
+import placeholderAvatar from "@/assets/committee/placeholder_avatar.jpg";
 
 export interface CommitteeMember {
   name: string;
@@ -120,13 +121,14 @@ export const committeeData: CommitteeSection[] = [
         designation: "Faculty, Mechanical Engineering",
         institution: "IIT Tirupati",
         photo: drVignesh,
+        description: "Ph.D., TU Darmstadt, Germany",
       },
       {
         name: "Dr. Mohd Furquan",
         designation: "Faculty, Mechanical Engineering",
         institution: "IIT Tirupati",
         photo: drFurquan,
-        description: "Ph.D., TU Darmstadt, Germany",
+        description: "Ph.D., IIT Kanpur",
       },
     ],
   },
@@ -144,6 +146,7 @@ export const committeeData: CommitteeSection[] = [
         designation: "Distinguished University Professor",
         institution: "University of South Florida, USA",
         photo: profGoswami,
+        description: "PhD, Mechanical Engineering, Auburn University",
       },
       {
         name: "Prof. Alberto Coronas",
@@ -163,12 +166,14 @@ export const committeeData: CommitteeSection[] = [
         designation: "Chairperson, ISER",
         institution: "IISc Bangalore",
         photo: profPramod,
+        description: "PhD, IISc Bangalore",
       },
       {
         name: "Prof. Jyotirmay Mathur",
         designation: "Professor-HAG, Mechanical Engineering",
         institution: "MNIT Jaipur",
         photo: profMathur,
+        description: "Ph.D., University of Essen, Germany",
       },
       {
         name: "Dr. Yashkumar Shukla",
@@ -183,6 +188,12 @@ export const committeeData: CommitteeSection[] = [
         photo: mrHariprasad,
       },
       {
+        name: "Mr. Krishnasamy R.",
+        designation: "President Elect",
+        institution: "ISHRAE Chennai Chapter",
+        photo: placeholderAvatar,
+      },
+      {
         name: "Prof. M. V. Rane",
         designation: "Professor, Mechanical Engineering",
         institution: "IIT Bombay",
@@ -193,6 +204,7 @@ export const committeeData: CommitteeSection[] = [
         designation: "Former Director",
         institution: "NEERI",
         photo: drDevotta,
+        description: "Hon. Professor of Eminence, Anna University, Chennai",
       },
       {
         name: "Prof. M. S. Dasgupta",
@@ -222,6 +234,7 @@ export const committeeData: CommitteeSection[] = [
         designation: "Associate Professor & HoD, Mechanical Engineering",
         institution: "IIT Jammu",
         photo: drSekhar,
+        description: "Leads the CREATE laboratory",
       },
       {
         name: "Dr. Gurubalan A",
@@ -234,6 +247,7 @@ export const committeeData: CommitteeSection[] = [
         designation: "Assistant Professor, Mechanical Engineering",
         institution: "NIT Rourkela",
         photo: drKiranNaik,
+        description: "Directs the STESL laboratory",
       },
       {
         name: "Prof. Jahar Sarkar",
@@ -247,6 +261,7 @@ export const committeeData: CommitteeSection[] = [
         designation: "Associate Professor, Sustainable Energy Engineering",
         institution: "IIT Kanpur",
         photo: drRai,
+        description: "Ph.D., Purdue University",
       },
       {
         name: "Dr. S. Sahoo",
@@ -259,6 +274,7 @@ export const committeeData: CommitteeSection[] = [
         designation: "Assistant Professor, Mechanical Engineering",
         institution: "NIT Calicut",
         photo: drSharma,
+        description: "Associate Dean, Planning & Development",
       },
       {
         name: "Dr. G. Praveen Kumar",
@@ -271,6 +287,7 @@ export const committeeData: CommitteeSection[] = [
         designation: "Assistant Professor, Mechanical Engineering",
         institution: "CUSAT, Kochi",
         photo: drHarikrishnan,
+        description: "Specializes in heat transfer and fluid dynamics",
       },
     ],
   },

@@ -68,11 +68,12 @@ const HeroSection = () => {
         {/* Download Brochure Button */}
         <div className="mb-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           <a
-            href="#"
+            href="/ncrac-brochure.docx"
+            download
             className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-green-accent hover:text-primary transition-all duration-300 hover:shadow-lg"
           >
             <Download size={18} />
-            Download Brochure (PDF)
+            Download Brochure
           </a>
         </div>
 
