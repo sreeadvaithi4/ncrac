@@ -93,7 +93,21 @@ The aspirations and living standards of humankind continue to rise alongside rap
               <div className="flex items-start gap-4">
                 <GraduationCap className="text-accent shrink-0 mt-1" size={28} />
                 <p className="text-foreground leading-relaxed">
-                  The Department of Mechanical Engineering at IIT Tirupati offers comprehensive programs in both undergraduate and postgraduate studies, with research strengths in thermal engineering, manufacturing, design, and energy systems. The department houses state-of-the-art laboratories and is committed to advancing innovation in sustainable technologies, contributing to India's vision of becoming a developed nation by 2047.
+                  ​The Department of Mechanical Engineering at IIT Tirupati, established in 2015, is a dynamic and rapidly growing academic unit offering programmes at multiple levels, including B.Tech, M.Tech (with specializations in Design & Manufacturing and Thermal Engineering and Energy Systems), as well as MS (R) and phd programmes. Recently, M.Tech programmes in Computational Mechanics and Executive M.Tech in Manufacturing have been approved. The faculty are actively engaged in diverse research areas such as renewable and wind energy, thermal energy storage, hydrogen production and storage, compact heat exchangers, advanced manufacturing, advanced materials, CFD, fluid-structure interaction, multiphase flows, robotics, aerial and underwater drones, precision agriculture, and food processing, and theoretical and applied mechanics. The department is supported by well-equipped instructional and research laboratories, central workshop, and state-of-the-art facilities, and is recognized for its interdisciplinary collaborations, industry-aligned curriculum, and strong emphasis on applied research.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </p>
               </div>
             </div>
@@ -106,14 +120,11 @@ The aspirations and living standards of humankind continue to rise alongside rap
         <div className="container mx-auto px-4">
           <SectionTitle title="Conference Topics" />
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-3">
-            {topics.map((topic, i) => <div
-                key={i}
-                className="flex items-start gap-2 bg-card rounded-lg p-3 border border-border text-sm">
+            {topics.map((topic, i) => <div key={i} className="flex items-start gap-2 bg-card rounded-lg p-3 border border-border text-sm">
 
                 <span className="text-accent font-bold mt-0.5">›</span>
                 <span className="text-foreground">{topic}</span>
-              </div>
-            )}
+              </div>)}
           </div>
         </div>
       </section>
@@ -128,23 +139,15 @@ The aspirations and living standards of humankind continue to rise alongside rap
             Submit your abstract and register for NCRAC 2026 to be part of India's premier conference on Refrigeration and Air Conditioning.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              to="/registration"
-              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300">
+            <Link to="/registration" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300">
 
               Register Now
             </Link>
-            <Link
-              to="/important-dates"
-              className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+            <Link to="/important-dates" className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
 
               View Important Dates
             </Link>
           </div>
         </div>
       </section>
-    </PageLayout>);
-
-};
-
-export default Index;
+    </PageLayout>);};export default Index;
