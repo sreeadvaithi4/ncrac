@@ -12,11 +12,10 @@ const fees = [
 ];
 
 const guidelines = [
-  "Registration fee includes conference kit, proceedings, meals, and banquet.",
-  "Payment details will be communicated upon abstract acceptance.",
-  "At least one author of each accepted paper must register.",
-  "Registration will be confirmed after payment verification.",
-  "For group registrations, contact ncrac2026@iittp.ac.in.",
+  "Fill the online registration form with accurate personal and affiliation details.",
+  "Required details: Name, Affiliation, Email, Contact number, Paper ID (if applicable).",
+  "Upload scanned copy of student ID / proof of affiliation if applicable.",
+  "Upload payment receipt for registration fee if instructed.",
 ];
 
 const Registration = () => {
