@@ -53,8 +53,8 @@ const HeroSection = () => {
           13 – 16 December 2026 · IIT Tirupati
         </p>
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-          National Conference on<br />
-          Refrigeration and Air Conditioning
+          9<sup>th</sup> National &amp; 3<sup>rd</sup> International Conference on<br />
+          "Refrigeration &amp; Air Conditioning"
         </h1>
         <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
           NCRAC 2026
