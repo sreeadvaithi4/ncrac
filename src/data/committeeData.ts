@@ -1,5 +1,6 @@
 import profSatyanarayana from "@/assets/committee/prof_kn_satyanarayana.jpg";
 import profSrinivasa from "@/assets/committee/prof_s_srinivasa_murthy.jpg";
+import profMaiya from "@/assets/committee/prof_mp_maiya.png";
 import profMuthukumar from "@/assets/committee/prof_p_muthukumar.jpg";
 import profAnilKumar from "@/assets/committee/prof_e_anil_kumar.jpg";
 import profSaravanan from "@/assets/committee/prof_r_saravanan.jpg";
