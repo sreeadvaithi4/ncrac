@@ -61,10 +61,10 @@ export const committeeData: CommitteeSection[] = [
     title: "Chairman",
     members: [
       {
-        name: "Prof. S. Srinivasa Murthy",
-        designation: "Professor of Refrigeration and Clean Energy Technologies",
-        institution: "IISc Bangalore",
-        photo: profSrinivasa,
+        name: "Prof. M. P. Maiya",
+        designation: "Retired Professor",
+        institution: "IIT Madras",
+        photo: profMaiya,
       },
       {
         name: "Prof. P. Muthukumar",
