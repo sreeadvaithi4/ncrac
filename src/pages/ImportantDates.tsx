@@ -3,9 +3,9 @@ import SectionTitle from "@/components/SectionTitle";
 import { CalendarDays } from "lucide-react";
 
 const dates = [
-  { event: "Short Abstracts (250 words)", date: "28th February 2026" },
-  { event: "Abstract Acceptance", date: "15th March 2026" },
-  { event: "Full Paper Submission", date: "30th June 2026" },
+  { event: "Short Abstracts (250 words)", date: "31st March 2026" },
+  { event: "Abstract Acceptance", date: "15th April 2026" },
+  { event: "Full Paper Submission", date: "31st July 2026" },
   { event: "Revised Paper Submission", date: "30th September 2026" },
   { event: "Conference Dates", date: "13–16th December 2026" },
 ];
