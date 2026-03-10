@@ -1,6 +1,6 @@
 import PageLayout from "@/components/PageLayout";
 import SectionTitle from "@/components/SectionTitle";
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, Download } from "lucide-react";
 
 const dates = [
   { event: "Short Abstracts (250 words)", date: "31st March 2026" },
