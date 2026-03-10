@@ -3,7 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 
 const fees = [
   { category: "Delegate", fee: "₹12,000" },
-  { category: "Accompanying Person", fee: "₹5,000" },
+  { category: "Delegate Accompanying Person", fee: "₹5,000" },
   { category: "Student (Academic / Research)", fee: "₹7,500" },
   { category: "Student Accompanying Person", fee: "₹3,500" },
   { category: "Industry Participant", fee: "₹15,000" },
