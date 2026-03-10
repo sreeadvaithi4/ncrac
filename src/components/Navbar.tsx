@@ -49,14 +49,14 @@ const Navbar = () => {
         <div className="flex lg:hidden items-center gap-3">
           <img src={logoIitt} alt="IIT Tirupati" className="h-8 w-auto bg-white/90 rounded p-0.5" />
 
-        {/* Mobile toggle */}
-        <button
-          className="lg:hidden text-primary-foreground"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+          <button
+            className="text-primary-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
