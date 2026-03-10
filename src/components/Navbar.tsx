@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-primary shadow-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <Link to="/" className="text-lg font-bold text-primary-foreground tracking-wide">
+        <Link to="/" className="text-2xl font-bold text-primary-foreground tracking-wide">
           NCRAC 2026
         </Link>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               <li key={link.path}>
                 <Link
                   to={link.path}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     location.pathname === link.path
                       ? "bg-accent text-accent-foreground"
                       : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
@@ -42,12 +42,12 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <img src={logoIitt} alt="IIT Tirupati" className="h-10 w-auto ml-2 bg-white/90 rounded p-0.5" />
+          <img src={logoIitt} alt="IIT Tirupati" className="h-14 w-auto ml-2 bg-white/90 rounded p-0.5" />
         </div>
 
         {/* Mobile: logo + toggle */}
         <div className="flex lg:hidden items-center gap-3">
-          <img src={logoIitt} alt="IIT Tirupati" className="h-8 w-auto bg-white/90 rounded p-0.5" />
+          <img src={logoIitt} alt="IIT Tirupati" className="h-11 w-auto bg-white/90 rounded p-0.5" />
 
           <button
             className="text-primary-foreground"
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <Link
                   to={link.path}
                   onClick={() => setOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     location.pathname === link.path
                       ? "bg-accent text-accent-foreground"
                       : "text-primary-foreground/80 hover:text-primary-foreground"
