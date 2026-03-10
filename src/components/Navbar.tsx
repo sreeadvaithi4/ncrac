@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logoIitt from "@/assets/images/logo_iitt.png";
 
 const navLinks = [
   { path: "/", label: "Home" },
-  { path: "/important-dates", label: "Important Dates" },
+  { path: "/important-dates", label: "Timeline & Guidelines" },
   { path: "/registration", label: "Registration" },
   { path: "/committee", label: "Committee" },
   { path: "/speakers", label: "Speakers" },
