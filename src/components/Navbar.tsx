@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-primary shadow-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <Link to="/" className="text-lg font-bold text-primary-foreground tracking-wide">
+        <Link to="/" className="text-2xl font-bold text-primary-foreground tracking-wide">
           NCRAC 2026
         </Link>
 
