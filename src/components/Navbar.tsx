@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {/* Mobile: logo + toggle */}
         <div className="flex lg:hidden items-center gap-3">
-          <img src={logoIitt} alt="IIT Tirupati" className="h-8 w-auto bg-white/90 rounded p-0.5" />
+          <img src={logoIitt} alt="IIT Tirupati" className="h-11 w-auto bg-white/90 rounded p-0.5" />
 
           <button
             className="text-primary-foreground"
