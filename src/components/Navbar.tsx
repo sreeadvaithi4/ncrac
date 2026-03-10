@@ -45,23 +45,9 @@ const Navbar = () => {
           <img src={logoIitt} alt="IIT Tirupati" className="h-10 w-auto ml-2 bg-white/90 rounded p-0.5" />
         </div>
 
-        {/* Desktop */}
-        <ul className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <li key={link.path}>
-              <Link
-                to={link.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? "bg-accent text-accent-foreground"
-                    : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
-                }`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {/* Mobile: logo + toggle */}
+        <div className="flex lg:hidden items-center gap-3">
+          <img src={logoIitt} alt="IIT Tirupati" className="h-8 w-auto bg-white/90 rounded p-0.5" />
 
         {/* Mobile toggle */}
         <button
