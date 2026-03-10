@@ -15,7 +15,7 @@ const ImportantDates = () => {
     <PageLayout>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <SectionTitle title="Important Dates" subtitle="Mark your calendar for these key milestones" />
+          <SectionTitle title="Timeline & Guidelines" subtitle="Mark your calendar for these key milestones" />
           <div className="max-w-3xl mx-auto space-y-4">
             {dates.map((item, i) => (
               <div
