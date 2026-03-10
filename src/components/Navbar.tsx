@@ -42,7 +42,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <img src={logoIitt} alt="IIT Tirupati" className="h-10 w-auto ml-2 bg-white/90 rounded p-0.5" />
+          <img src={logoIitt} alt="IIT Tirupati" className="h-14 w-auto ml-2 bg-white/90 rounded p-0.5" />
         </div>
 
         {/* Mobile: logo + toggle */}
