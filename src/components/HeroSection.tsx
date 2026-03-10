@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Download } from "lucide-react";
+import { Download, CalendarDays } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/images/hero-bg.jpg";
 
 const targetDate = new Date("2026-12-13T00:00:00").getTime();
@@ -66,7 +67,7 @@ const HeroSection = () => {
         </div>
 
         {/* Download Brochure Button */}
-        <div className="mb-10 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+        <div className="mb-10 animate-fade-in-up flex flex-wrap justify-center gap-4" style={{ animationDelay: "0.4s" }}>
           <a
             href="/ncrac-brochure.pdf"
             download
@@ -75,6 +76,13 @@ const HeroSection = () => {
             <Download size={18} />
             Download Brochure
           </a>
+          <Link
+            to="/important-dates"
+            className="inline-flex items-center gap-2 border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:shadow-lg"
+          >
+            <CalendarDays size={18} />
+            Timeline & Guidelines
+          </Link>
         </div>
 
         {/* Countdown Timer */}

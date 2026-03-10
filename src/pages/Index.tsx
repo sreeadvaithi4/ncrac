@@ -145,7 +145,7 @@ The aspirations and living standards of humankind continue to rise alongside rap
             </Link>
             <Link to="/important-dates" className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
 
-              View Important Dates
+              View Timeline & Guidelines
             </Link>
           </div>
         </div>

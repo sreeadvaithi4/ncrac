@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logoIitt from "@/assets/images/logo_iitt.png";
 
 const navLinks = [
   { path: "/", label: "Home" },
-  { path: "/important-dates", label: "Important Dates" },
+  { path: "/important-dates", label: "Timeline & Guidelines" },
   { path: "/registration", label: "Registration" },
   { path: "/committee", label: "Committee" },
   { path: "/speakers", label: "Speakers" },
@@ -23,32 +24,39 @@ const Navbar = () => {
           NCRAC 2026
         </Link>
 
-        {/* Desktop */}
-        <ul className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <li key={link.path}>
-              <Link
-                to={link.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  location.pathname === link.path
-                    ? "bg-accent text-accent-foreground"
-                    : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
-                }`}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {/* Desktop nav + logo */}
+        <div className="hidden lg:flex items-center gap-4">
+          <ul className="flex items-center gap-1">
+            {navLinks.map((link) => (
+              <li key={link.path}>
+                <Link
+                  to={link.path}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    location.pathname === link.path
+                      ? "bg-accent text-accent-foreground"
+                      : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <img src={logoIitt} alt="IIT Tirupati" className="h-10 w-auto ml-2 bg-white/90 rounded p-0.5" />
+        </div>
 
-        {/* Mobile toggle */}
-        <button
-          className="lg:hidden text-primary-foreground"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: logo + toggle */}
+        <div className="flex lg:hidden items-center gap-3">
+          <img src={logoIitt} alt="IIT Tirupati" className="h-8 w-auto bg-white/90 rounded p-0.5" />
+
+          <button
+            className="text-primary-foreground"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

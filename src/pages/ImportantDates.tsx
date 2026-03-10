@@ -1,11 +1,11 @@
 import PageLayout from "@/components/PageLayout";
 import SectionTitle from "@/components/SectionTitle";
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, Download } from "lucide-react";
 
 const dates = [
-  { event: "Short Abstracts (250 words)", date: "28th February 2026" },
-  { event: "Abstract Acceptance", date: "15th March 2026" },
-  { event: "Full Paper Submission", date: "30th June 2026" },
+  { event: "Short Abstracts (250 words)", date: "31st March 2026" },
+  { event: "Abstract Acceptance", date: "15th April 2026" },
+  { event: "Full Paper Submission", date: "31st July 2026" },
   { event: "Revised Paper Submission", date: "30th September 2026" },
   { event: "Conference Dates", date: "13–16th December 2026" },
 ];
@@ -15,7 +15,7 @@ const ImportantDates = () => {
     <PageLayout>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <SectionTitle title="Important Dates" subtitle="Mark your calendar for these key milestones" />
+          <SectionTitle title="Timeline & Guidelines" subtitle="Mark your calendar for these key milestones" />
           <div className="max-w-3xl mx-auto space-y-4">
             {dates.map((item, i) => (
               <div
@@ -52,9 +52,17 @@ const ImportantDates = () => {
             <p className="text-foreground leading-relaxed mb-4">
               Upon acceptance of the abstract, contributors will be invited to submit a full-length paper, with detailed formatting and submission guidelines to be communicated subsequently. All submissions will be subject to a rigorous peer-review process conducted by a panel of experts from both academia and industry.
             </p>
-            <p className="text-foreground leading-relaxed">
+            <p className="text-foreground leading-relaxed mb-6">
               <strong className="text-primary">Publication:</strong> Selected papers will be considered for publication in reputed SCI and Scopus indexed Journals.
             </p>
+            <a
+              href="/ncrac-abstract-template.pdf"
+              download
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-green-accent hover:text-primary transition-all duration-300 hover:shadow-lg"
+            >
+              <Download size={18} />
+              Abstract Template NCRAC 2026
+            </a>
           </div>
         </div>
       </section>
