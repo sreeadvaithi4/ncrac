@@ -139,10 +139,15 @@ The aspirations and living standards of humankind continue to rise alongside rap
             Submit your abstract and register for NCRAC 2026 to be part of India's premier conference on Refrigeration and Air Conditioning.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/registration" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300">
-
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe3jYpHYEfJlbujZS-LGnn_-t3ZdocJojStqGF-mD-EeprngA/viewform?usp=preview"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300"
+            >
+              <FileText size={18} />
               Register Now
-            </Link>
+            </a>
             <Link to="/important-dates" className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300">
 
               View Timeline & Guidelines
