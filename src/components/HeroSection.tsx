@@ -66,7 +66,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* Download Brochure Button */}
+        {/* Action Buttons */}
         <div className="mb-10 animate-fade-in-up flex flex-wrap justify-center gap-4" style={{ animationDelay: "0.4s" }}>
           <a
             href="/ncrac-brochure.pdf"
@@ -83,6 +83,15 @@ const HeroSection = () => {
             <CalendarDays size={18} />
             Timeline & Guidelines
           </Link>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe3jYpHYEfJlbujZS-LGnn_-t3ZdocJojStqGF-mD-EeprngA/viewform?usp=preview"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-green-accent text-primary px-8 py-3 rounded-lg font-semibold shadow-md hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:shadow-lg"
+          >
+            <FileText size={18} />
+            Register Now
+          </a>
         </div>
 
         {/* Countdown Timer */}
