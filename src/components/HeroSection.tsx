@@ -48,7 +48,7 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager" />
       
-      <div className="absolute inset-0 bg-primary/80" />
+      <div className="absolute inset-0 bg-primary/90" />
       <div className="relative z-10 container mx-auto px-4 text-center py-16">
         <p className="text-green-accent font-semibold text-sm md:text-base uppercase tracking-[0.2em] mb-4 animate-fade-in-up">
           13 – 16 December 2026 · IIT Tirupati
