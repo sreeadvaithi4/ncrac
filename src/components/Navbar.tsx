@@ -42,12 +42,12 @@ const Navbar = () => {
               </li>
             )}
           </ul>
-          <img src={logoIitt} alt="IIT Tirupati" className="h-14 w-auto ml-2 bg-white/90 rounded p-0.5" />
+          <img src={logoIitt} alt="IIT Tirupati" className="h-20 w-auto ml-2 bg-white/90 rounded p-0.5" />
         </div>
 
         {/* Mobile: logo + toggle */}
         <div className="flex lg:hidden items-center gap-3">
-          <img src={logoIitt} alt="IIT Tirupati" className="h-11 w-auto bg-white/90 rounded p-0.5 border-0 border-solid" />
+          <img src={logoIitt} alt="IIT Tirupati" className="h-16 w-auto bg-white/90 rounded p-0.5 border-0 border-solid" />
 
           <button
             className="text-primary-foreground"
