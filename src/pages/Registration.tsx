@@ -57,7 +57,9 @@ const Registration = () => {
           {/* Register Button */}
           <div className="text-center mt-12">
             <a
-              href="mailto:ncrac2026@iittp.ac.in?subject=NCRAC 2026 Registration"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe3jYpHYEfJlbujZS-LGnn_-t3ZdocJojStqGF-mD-EeprngA/viewform?usp=preview"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-primary text-primary-foreground px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover:shadow-xl"
             >
               Register Now
