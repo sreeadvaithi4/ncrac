@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 
 import SectionTitle from "@/components/SectionTitle";
 import { Link } from "react-router-dom";
-import { Download, BookOpen, Building2, GraduationCap } from "lucide-react";
+import { Download, BookOpen, Building2, GraduationCap, FileText } from "lucide-react";
 
 const topics = [
 "Energy efficiency & cold/heat recovery",
