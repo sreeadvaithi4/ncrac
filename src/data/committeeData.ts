@@ -58,7 +58,7 @@ export const committeeData: CommitteeSection[] = [
     ],
   },
   {
-    title: "Chairman",
+    title: "Chairmen",
     members: [
       {
         name: "Prof. M. P. Maiya",
