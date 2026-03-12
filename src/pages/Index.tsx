@@ -58,7 +58,7 @@ const Index = () => {
           <SectionTitle title="Conference Objectives" />
           <div className="max-w-4xl mx-auto">
             <div className="bg-background rounded-xl p-8 border border-border shadow-sm">
-              <p className="text-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed text-justify">
                 
 The aspirations and living standards of humankind continue to rise alongside rapid technological progress, while challenges such as environmental degradation, global warming, and climate change demand urgent attention. Meeting human comfort and industrial needs in an environmentally sustainable manner places Refrigeration and Air Conditioning (RAC) at the forefront of technological innovation. Beyond human comfort, RAC systems are essential to sectors including food preservation, healthcare, space exploration, and digital infrastructure, and currently account for nearly 20% of global electricity consumption. Although international efforts such as the Montreal Protocol have successfully addressed ozone depletion, the goals of the Kyoto Protocol and Paris Agreement-particularly reducing greenhouse gas emissions and limiting global temperature rise to within 2°C-remain ongoing challenges. Addressing these issues requires the development of eco-friendly refrigerants, innovative system architectures, integration with renewable energy, and life-cycle-based sustainability approaches. This conference aims to bring together researchers, academicians, industry professionals, and policymakers to discuss these challenges, showcase emerging technologies, and chart a path toward a low-carbon, energy-efficient, and sustainable future for refrigeration and air conditioning
               </p>
