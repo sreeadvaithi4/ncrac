@@ -43,7 +43,7 @@ const Index = () => {
             <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
               <div className="flex items-start gap-4">
                 <BookOpen className="text-accent shrink-0 mt-1" size={28} />
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   ​The National Conference on Refrigeration and Air Conditioning (NCRAC) was initiated at IIT Madras in 2009 and subsequently held as a biennial event in 2011 and 2013. The 4th NCRAC was hosted by Rajalakshmi College of Engineering, Chennai in 2015, followed by the 5th NCRAC at NITK Surathkal in 2018. The 6th NCRAC returned to IIT Madras, while the 7th NCRAC in 2022, organized by IIT Guwahati in association with IIT Tirupati, marked the first international edition of the conference. The most recent edition, NCRAC 2024, was hosted by IIT Madras. Building on this legacy, NCRAC 2026 aims to provide an international platform for the discussion and dissemination of cutting-edge research in refrigeration and air conditioning to the global community.
                 </p>
               </div>
