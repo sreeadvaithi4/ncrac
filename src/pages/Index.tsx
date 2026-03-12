@@ -75,7 +75,7 @@ The aspirations and living standards of humankind continue to rise alongside rap
             <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
               <div className="flex items-start gap-4">
                 <Building2 className="text-accent shrink-0 mt-1" size={28} />
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   IIT Tirupati, established in 2015, began functioning in the academic year 2015–16 with the support of its mentoring institute, IIT Madras. By 2018, its academic programs had expanded to nine departments spanning engineering, sciences, and humanities, offering B.Tech, M.Tech, M.Sc, M.S.(R), and PhD programmes. Its curriculam emphasize a strong foundation in theory complemented by practice-oriented laboratories, fostering innovation, creativity, teamwork, communication skills, ethics, and societal engagement. The permanent campus, spread over 548 acres, is under development, with several buildings operational since 2018. IIT Tirupati is also developing an 18-acre research park on its campus, set to be one of the largest in India upon completion. This facility aims to foster innovation, entrepreneurship, and industry-academia collaborations in areas like smart infrastructure, energy, and AI. Located in Tirupati, the institute benefits from an airport and excellent connectivity to Chennai and Bengaluru.
                 </p>
               </div>
