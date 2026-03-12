@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logoIitt from "@/assets/images/logo_iitt.png";
+import logoIitt from "@/assets/images/logo_iitt_new.png";
 
 const navLinks = [
 { path: "/", label: "Home" },
