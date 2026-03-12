@@ -43,7 +43,7 @@ const Index = () => {
             <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
               <div className="flex items-start gap-4">
                 <BookOpen className="text-accent shrink-0 mt-1" size={28} />
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   ​The National Conference on Refrigeration and Air Conditioning (NCRAC) was initiated at IIT Madras in 2009 and subsequently held as a biennial event in 2011 and 2013. The 4th NCRAC was hosted by Rajalakshmi College of Engineering, Chennai in 2015, followed by the 5th NCRAC at NITK Surathkal in 2018. The 6th NCRAC returned to IIT Madras, while the 7th NCRAC in 2022, organized by IIT Guwahati in association with IIT Tirupati, marked the first international edition of the conference. The most recent edition, NCRAC 2024, was hosted by IIT Madras. Building on this legacy, NCRAC 2026 aims to provide an international platform for the discussion and dissemination of cutting-edge research in refrigeration and air conditioning to the global community.
                 </p>
               </div>
@@ -58,7 +58,7 @@ const Index = () => {
           <SectionTitle title="Conference Objectives" />
           <div className="max-w-4xl mx-auto">
             <div className="bg-background rounded-xl p-8 border border-border shadow-sm">
-              <p className="text-foreground leading-relaxed">
+              <p className="text-foreground leading-relaxed text-justify">
                 
 The aspirations and living standards of humankind continue to rise alongside rapid technological progress, while challenges such as environmental degradation, global warming, and climate change demand urgent attention. Meeting human comfort and industrial needs in an environmentally sustainable manner places Refrigeration and Air Conditioning (RAC) at the forefront of technological innovation. Beyond human comfort, RAC systems are essential to sectors including food preservation, healthcare, space exploration, and digital infrastructure, and currently account for nearly 20% of global electricity consumption. Although international efforts such as the Montreal Protocol have successfully addressed ozone depletion, the goals of the Kyoto Protocol and Paris Agreement-particularly reducing greenhouse gas emissions and limiting global temperature rise to within 2°C-remain ongoing challenges. Addressing these issues requires the development of eco-friendly refrigerants, innovative system architectures, integration with renewable energy, and life-cycle-based sustainability approaches. This conference aims to bring together researchers, academicians, industry professionals, and policymakers to discuss these challenges, showcase emerging technologies, and chart a path toward a low-carbon, energy-efficient, and sustainable future for refrigeration and air conditioning
               </p>
@@ -75,7 +75,7 @@ The aspirations and living standards of humankind continue to rise alongside rap
             <div className="bg-card rounded-xl p-8 border border-border shadow-sm">
               <div className="flex items-start gap-4">
                 <Building2 className="text-accent shrink-0 mt-1" size={28} />
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   IIT Tirupati, established in 2015, began functioning in the academic year 2015–16 with the support of its mentoring institute, IIT Madras. By 2018, its academic programs had expanded to nine departments spanning engineering, sciences, and humanities, offering B.Tech, M.Tech, M.Sc, M.S.(R), and PhD programmes. Its curriculam emphasize a strong foundation in theory complemented by practice-oriented laboratories, fostering innovation, creativity, teamwork, communication skills, ethics, and societal engagement. The permanent campus, spread over 548 acres, is under development, with several buildings operational since 2018. IIT Tirupati is also developing an 18-acre research park on its campus, set to be one of the largest in India upon completion. This facility aims to foster innovation, entrepreneurship, and industry-academia collaborations in areas like smart infrastructure, energy, and AI. Located in Tirupati, the institute benefits from an airport and excellent connectivity to Chennai and Bengaluru.
                 </p>
               </div>
@@ -92,7 +92,7 @@ The aspirations and living standards of humankind continue to rise alongside rap
             <div className="bg-background rounded-xl p-8 border border-border shadow-sm">
               <div className="flex items-start gap-4">
                 <GraduationCap className="text-accent shrink-0 mt-1" size={28} />
-                <p className="text-foreground leading-relaxed">
+                <p className="text-foreground leading-relaxed text-justify">
                   ​The Department of Mechanical Engineering at IIT Tirupati, established in 2015, is a dynamic and rapidly growing academic unit offering programmes at multiple levels, including B.Tech, M.Tech (with specializations in Design & Manufacturing and Thermal Engineering and Energy Systems), as well as MS (R) and PhD programmes. Recently, M.Tech programmes in Computational Mechanics and Executive M.Tech in Manufacturing have been approved. The faculty are actively engaged in diverse research areas such as renewable and wind energy, thermal energy storage, hydrogen production and storage, compact heat exchangers, advanced manufacturing, advanced materials, CFD, fluid-structure interaction, multiphase flows, robotics, aerial and underwater drones, precision agriculture, and food processing, and theoretical and applied mechanics. The department is supported by well-equipped instructional and research laboratories, central workshop, and state-of-the-art facilities, and is recognized for its interdisciplinary collaborations, industry-aligned curriculum, and strong emphasis on applied research.
 
 
